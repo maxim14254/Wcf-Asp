@@ -1,0 +1,15 @@
+﻿#data {
+    border-collapse: collapse;
+    margin-top: 3%;
+}
+
+    #data td {
+        border: 2px solid;
+    }
+
+        #data td.empty {
+            border-left: 0;
+            border-bottom: 0;
+            border-right: 0;
+            border-top: 0;
+        }

@@ -1,0 +1,20 @@
+﻿.guruweba_example_form {
+    width: 290px;
+    margin: 10% auto
+}
+
+.guruweba_example_caption {
+    font-size: 24px;
+    text-align: center;
+}
+
+.guruweba_example_form .guruweba_example_infofield {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.guruweba_example_form select, .guruweba_example_form input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px 15px;
+}

@@ -1,0 +1,36 @@
+﻿
+@model IEnumerable<WebApplication3.ServiceReference1.Employer>
+
+<link rel="stylesheet" type="text/css" href="~/Css/StyleSheet2.css">
+
+<div>
+
+    <table cellspacing="0" cellpadding="12" align="center" id="data">
+        <tr>
+            <td align="center"><b>Id</b></td>
+            <td align="center"><b>Фамилия</b></td>
+            <td align="center"><b>Имя</b></td>
+            <td align="center"><b>Отчество</b></td>
+            <td align="center"><b>BirthDay</b></td>
+            <td align="center"><b>Age</b></td>
+            <td class="empty"></td>
+        </tr>
+        @{
+            foreach (var employer in Model)
+            {
+                <tr>
+                    <td align="center">@employer.ID</td>
+                    <td align="center">@employer.LastName</td>
+                    <td align="center">@employer.FirstName</td>
+                    <td align="center">@employer.Patronymic</td>
+                    <td align="center">@employer.BirthDay.ToShortDateString()</td>
+                    <td align="center">@employer.Age</td>
+
+
+                    <td align="center" class="empty"> <a href="/Home/Delete?id=@employer.ID">Удалить</a></td>
+                </tr>
+            }
+        }
+    </table>
+</div>
+

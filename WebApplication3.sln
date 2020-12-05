@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication3", "WebApplication3\WebApplication3.csproj", "{609CB0EE-E220-42C3-9C3C-D9E3EA692247}"
+	ProjectSection(ProjectDependencies) = postProject
+		{16AAAFEF-DC0E-477C-8322-D7E4D37A8273} = {16AAAFEF-DC0E-477C-8322-D7E4D37A8273}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfServiceLibrary1", "WcfServiceLibrary1\WcfServiceLibrary1.csproj", "{16AAAFEF-DC0E-477C-8322-D7E4D37A8273}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{609CB0EE-E220-42C3-9C3C-D9E3EA692247}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609CB0EE-E220-42C3-9C3C-D9E3EA692247}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609CB0EE-E220-42C3-9C3C-D9E3EA692247}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609CB0EE-E220-42C3-9C3C-D9E3EA692247}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16AAAFEF-DC0E-477C-8322-D7E4D37A8273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16AAAFEF-DC0E-477C-8322-D7E4D37A8273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16AAAFEF-DC0E-477C-8322-D7E4D37A8273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16AAAFEF-DC0E-477C-8322-D7E4D37A8273}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8BA4B7CC-B95B-44D5-AAAC-A9EF74BEDE99}
+	EndGlobalSection
+EndGlobal

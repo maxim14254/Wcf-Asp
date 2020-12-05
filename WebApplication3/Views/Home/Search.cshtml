@@ -1,0 +1,20 @@
+﻿
+
+
+<link rel="stylesheet" type="text/css" href="~/Css/StyleSheet3.css">
+
+<div class="guruweba_example_form">
+    @using (Html.BeginForm("GoSearch", "Home", FormMethod.Post))
+    {
+        <div class="guruweba_example_infofield">Введите фамилию</div>
+        <input type="text" name="lastname">
+
+        <div class="guruweba_example_infofield">Введите имя</div>
+        <input type="text" name="firstname">
+
+        <div class="guruweba_example_infofield">Введите отчество</div>
+        <input type="text" name="patronymic">
+
+        <input type="submit" name="submit_btn" value="Найти" style=" margin-left: 18px; ">
+    }
+</div>

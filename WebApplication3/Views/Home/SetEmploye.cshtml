@@ -1,0 +1,21 @@
+﻿<link rel="stylesheet" type="text/css" href="~/Css/StyleSheet3.css">
+
+<div class="guruweba_example_form">
+    @using (Html.BeginForm("GoSetEmploye", "Home", FormMethod.Post))
+    {
+        <div class="guruweba_example_infofield">Введите фамилию</div>
+        <input type="text" name="lastname" required>
+
+        <div class="guruweba_example_infofield">Введите имя</div>
+        <input type="text" name="firstname" required>
+
+        <div class="guruweba_example_infofield">Введите отчество</div>
+        <input type="text" name="patronymic" required>
+
+        <div class="guruweba_example_infofield">Дата рождения</div>
+        <input type="date" name="birthday" required>
+
+        <input type="submit" name="submit_btn" value="Добавить" style=" margin-left: 18px; ">
+    }
+</div>
+
