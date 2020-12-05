@@ -26,7 +26,7 @@ namespace WcfServiceLibrary1
 
         public void Dispose()
         {
-            connection.Dispose();
+            connection.Close();
         }
 
         public List<Employer> GetEmployees(string lastname, string firstname, string patronymic)

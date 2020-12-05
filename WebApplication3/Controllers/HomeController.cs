@@ -39,16 +39,25 @@ namespace WebApplication3.Controllers
         }
 
         [HttpGet]
-        public ActionResult Delete(int id)
+        public ActionResult Delete(string ID)
         {
-            var service = new Service1Client();
-            int del = service.DeleteEmployee(id);
-            if (del != 0)
+            ActionResult actionResult;
+            try
             {
-                return RedirectToAction("Index", "Home");
+                int id = int.Parse(ID);
+                var service = new Service1Client();
+                int del = service.DeleteEmployee(id);
+                if (del != 0)
+                {
+                    actionResult = RedirectToAction("Index", "Home");
+                }
+                else { actionResult = RedirectToAction("Error", "Home"); }
             }
-
-            return RedirectToAction("Error", "Home");
+            catch (System.FormatException) 
+            {
+                actionResult = RedirectToAction("Error", "Home");
+            }
+            return actionResult;
         }
 
         [HttpGet]
