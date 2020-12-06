@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace WcfServiceLibrary1
 {
     [DataContract]
-    public class Employer
+    public class Employer//класс сотрудников
     {
         [DataMember]
         public int ID { get; set; }
@@ -26,12 +26,12 @@ namespace WcfServiceLibrary1
         public DateTime BirthDay { get; set; }
 
         [DataMember]
-        public int Age 
+        public int Age// вычисляется автоматически
         {
             get
             {
                 int age;
-                if (BirthDay.DayOfYear <= DateTime.Now.DayOfYear)
+                if (BirthDay.DayOfYear <= DateTime.Now.DayOfYear)// сравниваем номер дня рождения в году и номера сегодняшнего дня в году 
                 {
                     age = DateTime.Now.Year - BirthDay.Year;
                 }
